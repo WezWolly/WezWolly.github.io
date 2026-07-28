@@ -1,0 +1,116 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,Arial,sans-serif;color:#333;line-height:1.6;background:#fff}
+/* Header height matched to homepage */
+header{
+  background:var(--navy);
+  height:122px;
+  display:flex;
+  align-items:center;
+  padding:0 42px;
+}
+
+.nav{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand{
+  color:white;
+  text-decoration:none;
+  font-size:30px;
+  font-weight:700;
+}
+
+nav{
+  display:flex;
+  gap:34px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:18px;
+}
+
+nav a:hover{
+  text-decoration:underline;
+}
+
+.hero{
+background:linear-gradient(rgba(18,53,91,.65),rgba(18,53,91,.65)),url("images/hero.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+min-height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#fff;
+padding:40px;
+}
+.hero h1{font-family:Poppins,sans-serif;font-size:3rem;margin-bottom:20px}
+.hero p{max-width:700px;margin:0 auto 30px}
+
+.btn{
+display:inline-block;
+background:#00A6A6;
+color:#fff;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
+.btn:hover{background:#008b8b}
+
+section{padding:70px 20px}
+h2{font-family:Poppins,sans-serif;color:#12355B;margin-bottom:25px}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:24px;
+margin-top:30px;
+}
+article{
+background:#fff;
+padding:24px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,.1);
+}
+article h3{color:#12355B;margin-bottom:10px}
+
+.section-image{
+width:100%;
+max-width:900px;
+display:block;
+margin:25px auto;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.contact{
+background:#f4f7fb;
+text-align:center;
+}
+.contact a{color:#12355B;font-weight:600;text-decoration:none}
+
+footer{
+background:#12355B;
+color:#fff;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+header{height:auto;padding:18px 20px}
+header .wrap{flex-direction:column;gap:14px}
+header nav{gap:18px;flex-wrap:wrap;justify-content:center}
+.hero h1{font-size:2.2rem}
+}
