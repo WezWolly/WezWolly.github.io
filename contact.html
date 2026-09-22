@@ -225,7 +225,8 @@ button:hover{
   </label>
 
   <button type="submit">SUBMIT</button>
-<form onsubmit="event.preventDefault(); this.reset();"></form>
+
+  <button type="submit" onclick="event.preventDefault(); this.form.reset();">SUBMIT</button>
   
 </form>
 
