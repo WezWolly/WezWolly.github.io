@@ -213,9 +213,9 @@ button:hover{
 
   <input type="tel" name="phone" placeholder="Phone Number">
 
-  <input type="email" name="email" placeholder="E-mail" required>
+<!--  <input type="email" name="email" placeholder="E-mail" required> -->
 
-  <input type="text" name="address" placeholder="Address">
+ <!--  <input type="text" name="address" placeholder="Address"> -->
 
   <textarea name="message" placeholder="Tell us about your enquiry"></textarea>
 
@@ -229,6 +229,23 @@ button:hover{
   
 </form>
 
+  <form id="myForm" onsubmit="event.preventDefault(); this.reset();">
+  <!-- Your Input Boxes -->
+ <!-- <label for="username">Username:</label> -->
+<!--  <input type="text" id="username" placeholder="Type here..."> -->
+
+<!--    <input type="text" name="name" placeholder="Full Name" required> -->
+<!-- <input type="tel" name="phone" placeholder="Phone Number"> -->
+
+    <input type="tel" name="phone" placeholder="Phone Number">
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Type here...">
+ <textarea name="message" placeholder="Tell us about your enquiry"></textarea>
+    
+  <!-- The Submit Button -->
+  <button type="submit">Submit</button>
+</form>
+  
 </section>
 
 </main>
