@@ -13,12 +13,6 @@
   --text:#10233f;
 }
 
-textarea {
-    font-family: inherit; /* This forces it to use the same font as the input boxes */
-    font-size: inherit;   /* Optional: Ensures the text size matches too */
-}
-
-  
 *{box-sizing:border-box;}
 
 body{
@@ -32,6 +26,7 @@ body{
     center center / cover no-repeat fixed;
 }
 
+/* Header height matched to homepage */
 header{
   background:var(--navy);
   height:122px;
@@ -109,7 +104,7 @@ form{
   flex-direction:column;
   gap:16px;
 }
-  
+
 input, textarea{
   width:100%;
   padding:16px;
@@ -207,46 +202,29 @@ button:hover{
 
 <section class="panel">
 
-<h3>Get in touch - 020 3951 5802</h3>
+<h1><span>GET</span>in touch</h1>
 
-<!-- Form routing directly to your CertifiWise routing profile
-<form action="https://formsubmit.co/info@certifiwise.com" method="POST"> -->
-  
-  <!-- Hidden configuration to bounce back to homepage upon submission success -->
-  <input type="hidden" name="_next" value="https://certifiwise.com">
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-  <input type="text" name="name" placeholder="Full Name" required>
+<input type="text" name="name" placeholder="Full Name" required>
 
-  <input type="tel" name="phone" placeholder="Phone Number">
+<input type="tel" name="phone" placeholder="Phone Number">
 
- <input type="email" name="email" placeholder="E-mail" required> 
+<input type="email" name="email" placeholder="E-mail" required>
 
- <input type="text" name="address" placeholder="Address"> 
+<input type="text" name="address" placeholder="Address">
 
-  <textarea name="message" placeholder="Tell us about your enquiry"></textarea>
+<textarea name="message" placeholder="Tell us about your enquiry"></textarea>
 
-  <label class="consent">
-    <input type="checkbox" name="consent" required>
-    <span>I accept the above information will be used to contact me.</span>
-  </label>
+<label class="consent">
+  <input type="checkbox" name="consent" required>
+  <span>I accept the above information will be used to contact me.</span>
+</label>
 
-   <button type="submit">SUBMIT</button> 
+<button type="submit">SUBMIT</button>
 
- <!--    <button type="submit" onclick="event.preventDefault(); this.form.reset();">SUBMIT</button> -->
-  
 </form>
 
-<!--   <form id="myForm" onsubmit="event.preventDefault(); this.reset();"> -->
-    
-  <!-- Your Input Boxes -->
- <!-- <label for="username">Username:</label> -->
-<!--  <input type="text" id="username" placeholder="Type here..."> -->
-
-<!--    <input type="text" name="name" placeholder="Full Name" required> -->
-<!-- <input type="tel" name="phone" placeholder="Phone Number"> -->
-
-
-  
 </section>
 
 </main>
