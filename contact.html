@@ -26,7 +26,6 @@ body{
     center center / cover no-repeat fixed;
 }
 
-/* Header height matched to homepage */
 header{
   background:var(--navy);
   height:122px;
@@ -104,17 +103,6 @@ form{
   flex-direction:column;
   gap:16px;
 }
-
-  <form action="https://formsubmit.co/info@certifiwise.com" method="POST">
-  
-    <!-- ADD THIS NEW LINE RIGHT HERE: -->
-    <input type="hidden" name="_next" value="https://certifiwise.com">
-
-    <!-- Keep all your regular inputs below it like normal -->
-    <label for="name">Name:</label>
-    <input type="text" name="name" required>
-  
-
   
 input, textarea{
   width:100%;
@@ -215,26 +203,28 @@ button:hover{
 
 <h1><span>GET</span>in touch</h1>
 
-
-
-<form action="https://formsubmit.co/info@certifiwise.com" method="POST">
+<!-- Form routing directly to your CertifiWise routing profile -->
+<form action="https://formsubmit.co" method="POST">
   
-<input type="text" name="name" placeholder="Full Name" required>
+  <!-- Hidden configuration to bounce back to homepage upon submission success -->
+  <input type="hidden" name="_next" value="https://certifiwise.com">
 
-<input type="tel" name="phone" placeholder="Phone Number">
+  <input type="text" name="name" placeholder="Full Name" required>
 
-<input type="email" name="email" placeholder="E-mail" required>
+  <input type="tel" name="phone" placeholder="Phone Number">
 
-<input type="text" name="address" placeholder="Address">
+  <input type="email" name="email" placeholder="E-mail" required>
 
-<textarea name="message" placeholder="Tell us about your enquiry"></textarea>
+  <input type="text" name="address" placeholder="Address">
 
-<label class="consent">
-  <input type="checkbox" name="consent" required>
-  <span>I accept the above information will be used to contact me.</span>
-</label>
+  <textarea name="message" placeholder="Tell us about your enquiry"></textarea>
 
-<button type="submit">SUBMIT</button>
+  <label class="consent">
+    <input type="checkbox" name="consent" required>
+    <span>I accept the above information will be used to contact me.</span>
+  </label>
+
+  <button type="submit">SUBMIT</button>
 
 </form>
 
